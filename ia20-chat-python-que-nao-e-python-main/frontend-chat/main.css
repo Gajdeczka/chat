@@ -1,0 +1,98 @@
+:root {
+    --ascent-color: #111b1f;
+    --background-color: #17252a;
+    --font-color: lightcoral;
+    --form-color: #2a3d44;
+    --sub-color: black;
+    --button-color: #101a1d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100%;
+    width: 100vw;
+    background-color: var(--background-color);
+    background-image: linear-gradient(to botton, red, black);
+} 
+
+form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input {
+    text-align: center;
+    background-color: #fd5858;
+    border: red solid 3px;
+    border-radius: 3rem;
+    color: lightcoral;
+    height: 2rem;
+    outline: none;
+}
+  
+  input::placeholder {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: #56646d;
+  }
+  
+  .display {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+  }
+
+ .display > span{
+    background-color: #2a3d44;
+    font-size: 12px;
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+  span {
+      border: red solid 3px;
+      border-radius: 1rem;
+      width: 200px;
+      margin: 15px;
+      padding: 15px;
+  }
+
+  span:nth-child(2n + 1)::after {
+      display: block;
+      background-color: black;
+      margin-left: 170px;
+      margin-bottom: -30px;
+      background-color: #17252a;
+  }
+
+  span:nth-child(2n + 2)::after {
+    display: block;
+    background-color: black;
+    margin-right: 170px;
+    margin-bottom: -30px;
+    background-color: #101a1d;
+}
+  
+  span:nth-child(2n + 1) {
+    text-align: right;
+    background-color: #070c0e;
+    align-self: flex-end;
+  }
+  
+  span:nth-child(2n + 2) {
+      text-align: left;
+      background-color: #131c1f;
+      align-self: flex-start;
+  }
